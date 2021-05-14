@@ -8,7 +8,7 @@ Pour ce projet, nous appliquerons la segmentation sur des images de microcircuit
 
 ## Les données 
 
-Pour ce projet, le dataset est constitué de 30 images de train, 30 images de test, ainsi que 30 images labels correspondantes aux images d'entrainement. Nous appliquerons donc la data augmentation agin de grossir notre dataset et obtenir un modèle plus pertinent. 
+Pour ce projet, le dataset est constitué de 30 images de train, 30 images de test, ainsi que 30 images labels correspondantes aux images d'entrainement. Nous appliquerons la data augmentation agin de grossir notre dataset et obtenir un modèle plus pertinent. 
 
 **Image original**
 
@@ -17,3 +17,9 @@ Pour ce projet, le dataset est constitué de 30 images de train, 30 images de te
 **Image label**
 
 ![](Images/label.png)
+
+## Data Augmentation
+
+Pour la data augmentation, nous faisons le choix d'utiliser le module **skimage**. Nous aurions également pu utiliser *ImageDataGenerator()* de **Keras**, cependant cette méthode nous limite. En effet, lors de l'utilisation de cette fonction, seul les images modifiées sont utilisées pour l'entrainement et non les originales.
+
+Nous optons pour un flip horizontale, ainsi qu'une transformation affine de chaque image. Grâce à cette méthode nous passons de 30 à **72 images d'entrainement**. 
