@@ -27,3 +27,7 @@ Nous optons pour un flip horizontale, ainsi qu'une transformation affine de chaq
 **exemple de transformation affine :**
 
 ![](Images/affinetransform.PNG)
+
+## Le Modèle 
+
+![](Images/unet.PNG)
