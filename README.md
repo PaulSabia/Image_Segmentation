@@ -23,3 +23,7 @@ Pour ce projet, le dataset est constitué de 30 images de train, 30 images de te
 Pour la data augmentation, nous faisons le choix d'utiliser le module **skimage**. Nous aurions également pu utiliser *ImageDataGenerator()* de **Keras**, cependant cette méthode nous limite. En effet, lors de l'utilisation de cette fonction, seul les images modifiées sont utilisées pour l'entrainement et non les originales.
 
 Nous optons pour un flip horizontale, ainsi qu'une transformation affine de chaque image. Grâce à cette méthode nous passons de 30 à **72 images d'entrainement**. 
+
+*exemple de transformation affine :*
+
+![](Images/affinetransform.PNG)
