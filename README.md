@@ -24,6 +24,6 @@ Pour la data augmentation, nous faisons le choix d'utiliser le module **skimage*
 
 Nous optons pour un flip horizontale, ainsi qu'une transformation affine de chaque image. Grâce à cette méthode nous passons de 30 à **72 images d'entrainement**. 
 
-*exemple de transformation affine :*
+**exemple de transformation affine :**
 
 ![](Images/affinetransform.PNG)
