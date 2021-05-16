@@ -30,4 +30,27 @@ Nous optons pour un flip horizontale, ainsi qu'une transformation affine de chaq
 
 ## Le Modèle 
 
+Pour le modèle nous choisissons l'architecture Unet car il peut reconstruire l'image. Unet est utilisée dans la segmentation d'imagerie médical et plus particulièrement les images de microscopie biologique. 
+
+Dans la segmentation, nous devons reconstruire l'image à partir du vecteur de caractéristiques créé par CNN :
+
 ![](Images/unet.PNG)
+
+L'architecture ressemble à un «U» et contient deux chemins : **Compression** et **Expansion**.
+
+La partie **Compression** permet de capturer le contexte dans l'image. Nous avons des couches de convolution, des couches de max pooling. Le nombre de filtre double après chaque bloc afin que l'architecture puisse apprendre les structures complexes.
+
+Le deuxième chemin, **Expansion** symétrique, est utilisé pour permettre une localisation précise à l'aide de convolutions transposées. La convolution transposée est le processus opposé d'une convolution normale.
+
+## Résultats
+
+Au bout de **100 epochs**, nous obtenons une précision d'environ **84%**.
+
+**Courbe accuracy : **
+
+![](Images/accuracy.PNG)
+
+**Courbe loss : **
+
+![](Images/loss.PNG)
+
