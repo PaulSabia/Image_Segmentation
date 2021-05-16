@@ -44,13 +44,16 @@ Le deuxième chemin, **Expansion** symétrique, est utilisé pour permettre une 
 
 ## Résultats
 
-Au bout de **100 epochs**, nous obtenons une précision d'environ **84%**.
+Au bout de **100 epochs**, nous obtenons une précision d'environ **84%** sur les données de validation.
 
-**Courbe accuracy : **
+**Courbe accuracy :**
 
 ![](Images/accuracy.PNG)
 
-**Courbe loss : **
+**Courbe loss :**
 
 ![](Images/loss.PNG)
 
+## Test du Modèle
+
+![](Images/predictions.PNG)
