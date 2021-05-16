@@ -36,7 +36,7 @@ Dans la segmentation, nous devons reconstruire l'image à partir du vecteur de c
 
 ![](Images/unet.PNG)
 
-L'architecture ressemble à un «U» et contient deux chemins : **Compression** et **Expansion**.
+L'architecture ressemble à un **«U»** et contient deux chemins : **Compression** et **Expansion**.
 
 La partie **Compression** permet de capturer le contexte dans l'image. Nous avons des couches de convolution, des couches de max pooling. Le nombre de filtre double après chaque bloc afin que l'architecture puisse apprendre les structures complexes.
 
@@ -57,3 +57,9 @@ Au bout de **100 epochs**, nous obtenons une précision d'environ **84%** sur le
 ## Test du Modèle
 
 ![](Images/predictions.PNG)
+
+La prédiction de gauche est réalisée avec le modèle sans data augmentation contrairement à l'image de droite. Nous pouvons remarquer qu'avec une data augmentation nous obtenons un résulat légèrement plus net.
+
+## Conclusion
+
+Notre modèle **Unet** segmente correctement nos images et nous donne des **résultats satisfaisants**. Nous avons pu remarquer l'utilité de la data augmentation qui nous donne de meilleurs résulats. 
